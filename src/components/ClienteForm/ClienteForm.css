@@ -1,0 +1,116 @@
+.form-container {
+  max-width: 800px; /* define a largura máxima */
+  width: 100%;
+  margin: 20px auto; /* centraliza horizontalmente */
+  padding: 10px;
+}
+
+.cliente-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cliente-form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-group {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Input dos telefones */
+.telefone-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.telefone-wrapper input {
+  width: 100%;
+  padding-right: 30px; /* espaço para o botão */
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  
+  width: 25%;
+  padding: 8px 16px;
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+/* Botão remover telefone extra adicionado */
+.btn-remover {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #d00;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.btn-remover:hover {
+  color: #a00;
+}
+
+.btn-adicionarTelefone {
+  background-color: #28a745;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+.btn-adicionarTelefone:hover {
+  background-color: #218838;
+}
+
+.btn-cancelar {
+  background-color: #dc3545;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.btn-container button {
+  flex: 1; /* faz cada botão ocupar espaço igual */
+  min-width: 150px;
+};
+
+.erro {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
